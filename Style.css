@@ -6,7 +6,12 @@
         }        
     ya que no hacia nada,
     y mejoras en los espacios*/
-
+    html {
+        box-sizing: border-box; /* arregla problemas relacionados al desbordamiento*/
+      }
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
 body {
   margin: 0;
   padding: 0;
@@ -15,11 +20,10 @@ body {
 
 header {
   background-color: whitesmoke;
-  padding: 25px;
+  padding: 10px;
   font-size: large;
   font-weight: 400;
   font-style: normal;
-  margin: -20px;
   text-align: center;
   width: 100%;
   position: sticky;
@@ -29,7 +33,7 @@ header {
 }
 
 .head {
-  margin-top: 7rem;
+  margin-top: 10rem;
   justify-content: center;
   text-align: center;
 }
@@ -112,24 +116,29 @@ header {
 }
 
 .footer {
-  margin-top: 10rem; /* Margen superior */
-  background-color: black; /* Color de fondo */
-  color: white; /* Color del texto */
-  text-align: center; /* Alineación del texto */
-  padding: 120px 0; /* Espaciado interno (arriba y abajo) */
-  width: 100%; /* Ancho completo */
-  margin-left: 0; /* Margen izquierdo a cero */
-  margin-right: 0; /* Margen derecho a cero */
+    margin-top: 10rem; /* Margen superior */
+    background-color: black; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px; /* Espaciado interno (arriba y abajo) */
+    width: 100%; /* Ancho completo */
+    margin-left: 0; /* Margen izquierdo a cero */
+    margin-right: 0; /* Margen derecho a cero */
+}
+   
+.footer ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    list-style: none;
+    gap: 0.5rem;
+    
 }
 
-.footer ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-}
-
-footer p {
-  font-family: "Courier New", Courier, monospace;
-  margin-top: 4rem;
-  text-align: center;
+footer p{
+   
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 13px;
 }
