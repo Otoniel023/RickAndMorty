@@ -47,31 +47,30 @@ header {
 }
 
 .head-c {
-  margin-top: 40px;
+  margin-top: 25px;
   font-size: larger;
   text-align: center;
+  margin-bottom: 25px;
 }
 
 #personajes {
-  margin-top: 25px;
+ 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   width: 100%;
   text-align: center;
-  align-items: center;
-  justify-content: center;
   font-family: "Baskervville", serif;
+  grid-gap: 10px 15px;
+  
 }
 
-#personajes div:hover {
+#personajes > div:hover{
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.head-c {
-  margin-top: 250px;
-}
+
 .head-c button {
   appearance: none;
   background-color: transparent;
@@ -141,4 +140,14 @@ footer p{
     margin-top: 2rem;
     text-align: center;
     font-size: 13px;
+}
+
+.card img{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.card div{
+    background-color: whitesmoke;
+    margin: 2rem 0 2rem 0;
 }
